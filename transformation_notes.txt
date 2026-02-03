@@ -1,0 +1,27 @@
+1. Loaded the HR Employee Attrition dataset into Power BI using Text/CSV option.
+
+2. Opened Power Query Editor to perform data transformation.
+
+3. Removed unnecessary columns such as EmployeeCount, Over18, and StandardHours to reduce noise.
+
+4. Renamed important columns for better readability (MonthlyIncome renamed to Salary, JobRole renamed to Job Role).
+
+5. Checked for missing values across all columns and replaced or handled them appropriately.
+
+6. Changed data types of columns such as Age and Salary to numeric types and Attrition to text type.
+
+7. Created a new derived column called "Age Group" using conditional logic:
+   - Age < 30 → Young
+   - Age 30–50 → Mid Age
+   - Age > 50 → Senior
+
+8. Created another derived column called "Salary Band" using conditional logic:
+   - Salary < 3000 → Low
+   - Salary 3000–7000 → Medium
+   - Salary > 7000 → High
+
+9. Removed duplicate records using EmployeeNumber to ensure each row represents a unique employee.
+
+10. Applied and loaded the transformed dataset into the Power BI data model for visualization.
+
+11. Built basic visuals using transformed data including Attrition distribution, Age Group analysis, and Salary by Job Role.
